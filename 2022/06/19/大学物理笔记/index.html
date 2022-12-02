@@ -28,7 +28,7 @@
 <meta property="og:description" content="质点运动学 位矢 \(\vec{r}&#x3D;x\vec{i}+y\vec{j}+z\vec{k}\) 位移 \(\Delta\vec{r}&#x3D;\Delta x\vec{i}+\Delta y\vec{j}+\Delta z\vec{k}\) 速度 \(\vec{v}&#x3D;\frac{d\vec{r}}{dt}\) 速率 \(v&#x3D;|\vec{v}|&#x3D;|\frac{d\vec{r}}{dt}|\">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-06-18T17:07:10.000Z">
-<meta property="article:modified_time" content="2022-06-26T12:28:29.730Z">
+<meta property="article:modified_time" content="2022-12-02T02:50:32.282Z">
 <meta property="article:author" content="Zhangqi Li">
 <meta name="twitter:card" content="summary">
 
@@ -189,7 +189,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-06-26 20:28:29" itemprop="dateModified" datetime="2022-06-26T20:28:29+08:00">2022-06-26</time>
+                <time title="修改时间：2022-12-02 10:50:32" itemprop="dateModified" datetime="2022-12-02T10:50:32+08:00">2022-12-02</time>
               </span>
 
           
@@ -472,6 +472,336 @@ L}{\ln{\frac{R_B}{R_A}}}\)</span></td>
 </tr>
 </tbody>
 </table>
+<h1 id="简谐运动">简谐运动</h1>
+<p>振幅为<span class="math inline">\(A\)</span>，角频率为<span
+class="math inline">\(\omega\)</span>，初相为<span
+class="math inline">\(\varphi\)</span><br />
+定义式</p>
+<p><span class="math inline">\(x=A\cos{(\omega t+\varphi)}\)</span></p>
+<p>动力学定义式</p>
+<p>受力<br />
+<span class="math inline">\(F=-kx\)</span></p>
+<p>动力学方程（微分方程）<br />
+<span
+class="math inline">\(\frac{d^2x}{dt^2}+\omega^2x=0\)</span>其中<span
+class="math inline">\(\omega=\sqrt{\frac{k}{m}}\)</span></p>
+<p>运动学方程<br />
+<span class="math inline">\(x=A\cos{(\omega t + \varphi)}\)</span><br />
+<span class="math inline">\(v=-\omega A\sin{(\omega t +
+\varphi)}\)</span><br />
+<span class="math inline">\(x=-\omega^2 A\cos{(\omega t +
+\varphi)}\)</span></p>
+<p>初始条件决定振幅和初项<br />
+<span class="math inline">\(A=\sqrt{x^2_0+\frac{v_0^2}{\omega^2}},
+\varphi=\arctan{(-\frac{v_0}{\omega x_0})}\)</span></p>
+<p>实例（参见动力学方程）</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(\omega^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>弹簧振子</td>
+<td><span class="math inline">\(\frac{k}{m}\)</span></td>
+</tr>
+<tr class="even">
+<td>单摆小幅度震动</td>
+<td><span class="math inline">\(\frac{g}{l}\)</span></td>
+</tr>
+<tr class="odd">
+<td>复摆</td>
+<td><span class="math inline">\(\frac{mgh}{J}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>能量</p>
+<p>机械能保持不变，反映了震动的强度和振幅的平方成正比<br />
+计算方式参见质点动力学</p>
+<p>振动合成<br />
+<span
+class="math inline">\(A=\sqrt{A_1^2+A_2^2+2A_1A_2\cos{(\varphi_2-\varphi_1)}}\)</span></p>
+<h1 id="机械波">机械波</h1>
+<p>波速，又称相速，用<span class="math inline">\(u\)</span>表示<br />
+<span class="math inline">\(u=\frac{\lambda}{T}=\lambda\nu\)</span></p>
+<p>波函数的一般形式<br />
+<span
+class="math inline">\(y(x,t)=A\cos{[\omega(t\mp\frac{x}{u})+\varphi]}\)</span><br />
+其他形式<br />
+<span class="math inline">\(y(x,t)=A\cos{(\omega
+t\mp\frac{2\pi}{\lambda}x+\varphi)}\)</span><br />
+-表示沿x轴正向传播</p>
+<p>振动速度<br />
+<span class="math inline">\(v(x,t)=\frac{\partial y(x,t)}{\partial
+t}=-\omega A\sin{[\omega(t\mp\frac{x}{u})+\varphi]}\)</span></p>
+<p>振动加速度<br />
+<span class="math inline">\(a(x,t)=\frac{\partial^2 y(x,t)}{\partial
+t^2}=-\omega^2 A\cos{[\omega(t\mp\frac{x}{u})+\varphi]}\)</span></p>
+<p>震动动能<span class="math inline">\(E_k\)</span>，弹性势能<span
+class="math inline">\(E_p\)</span>和总机械能<span
+class="math inline">\(E\)</span>同相位变化<br />
+<span class="math inline">\(dE=2dE_k=2dE_p=\rho v^2dV=\rho
+dVA^2\omega^2\sin^2[\omega(t\mp\frac{x}{u})+\varphi]\)</span></p>
+<p>能量密度 <span class="math inline">\(w=\frac{dE}{dV}=\rho
+A^2\omega^2\sin^2[\omega(t\mp\frac{x}{u})+\varphi]\)</span></p>
+<p>平均能量密度：能量密度在一个周期内的平均值<br />
+<span class="math inline">\(\bar w = \frac{1}{T}\int_{t}^{t+T}\omega
+dt=\frac{1}{2}\rho A^2 \omega^2\)</span></p>
+<p>驻波由两列频率、振动方向和振幅都相同而传播方向相反的简谐波叠加形成<br />
+<span class="math inline">\(y=2A\cos (2\pi\frac{x}{\lambda})\cos(2\pi
+\nu t)\)</span></p>
+<p>波腹位置（振幅最大）<br />
+<span class="math inline">\(x=\pm k\frac{\lambda}{2}(k\in
+\mathbb{Z})\)</span><br />
+波节位置（振幅为零）<br />
+<span class="math inline">\(x=\pm (2k+1)\frac{\lambda}{4}(k\in
+\mathbb{Z})\)</span></p>
+<h1 id="波动光学">波动光学</h1>
+<p>光程与光程差<br />
+<span class="math inline">\(光程=nr\)</span><br />
+<span class="math inline">\(光程差=n_1r_1-n_2r_2\)</span></p>
+<p>光程差与相位差的关系<br />
+<span
+class="math inline">\(\Delta\varphi=\frac{2\pi}{\lambda}\delta\)</span></p>
+<p>光从光疏媒质向光密媒质入射时，会产生半波损失，即产生了<span
+class="math inline">\(\pi\)</span>的相位突变</p>
+<p>明纹相位差<br />
+<span class="math inline">\(\Delta\varphi=\pm2k\pi\)</span><br />
+光程差<br />
+<span class="math inline">\(\delta=\pm k\lambda\)</span><br />
+暗纹相位差<br />
+<span class="math inline">\(\Delta\varphi=\pm(2k+1)\pi\)</span><br />
+光程差<br />
+<span class="math inline">\(\delta=\pm
+(2k+1)\frac{\lambda}{2}\)</span></p>
+<p>杨氏双缝干涉</p>
+<p>光程差<br />
+<span class="math inline">\(\delta=nxd/D\)</span><br />
+明纹中心坐标<br />
+<span class="math inline">\(x=\pm2kD\lambda/(2nd)\)</span><br />
+暗纹中心坐标<br />
+<span class="math inline">\(x=\pm(2k+1)D\lambda/(2nd)\)</span><br />
+相邻明（暗）纹间隔<br />
+<span class="math inline">\(\Delta x=D\lambda/(nd)\)</span></p>
+<p>薄膜干涉</p>
+<p>光程差</p>
+<p>反射光<br />
+<span
+class="math inline">\(\delta_r=2e\sqrt{n_2^2-n_1^2\sin^2{i}}(n_1&lt;n_2&lt;n_3或n_1&gt;n_2&gt;n_3)\)</span><br />
+<span
+class="math inline">\(\delta_r=2e\sqrt{n_2^2-n_1^2\sin^2{i}}+\frac{\lambda}{2}(n_1&lt;n_2&gt;n_3或n_1&gt;n_2&lt;n_3)\)</span></p>
+<p>透射光<br />
+<span
+class="math inline">\(\delta_r=2e\sqrt{n_2^2-n_1^2\sin^2{i}}+\frac{\lambda}{2}(n_1&lt;n_2&lt;n_3或n_1&gt;n_2&gt;n_3)\)</span><br />
+<span
+class="math inline">\(\delta_r=2e\sqrt{n_2^2-n_1^2\sin^2{i}}(n_1&lt;n_2&gt;n_3或n_1&gt;n_2&lt;n_3)\)</span></p>
+<p>劈尖干涉</p>
+<p>光垂直照射在劈尖上时，反射光的光程差为<br />
+<span
+class="math inline">\(\delta_r=2n_2e(n_1&lt;n_2&lt;n_3或n_1&gt;n_2&gt;n_3)\)</span><br />
+<span
+class="math inline">\(\delta_r=2n_2e+\frac{\lambda}{2}(n_1&lt;n_2&gt;n_3或n_1&gt;n_2&lt;n_3)\)</span></p>
+<p>相邻明纹（或暗纹）对应薄膜的厚度差<br />
+<span class="math inline">\(\Delta e=\lambda/(2n_2)\)</span><br />
+相邻明纹（或暗纹）的间隔<br />
+<span class="math inline">\(\Delta l=\lambda/(2n_2\theta)\)</span></p>
+<p>牛顿环</p>
+<p>明环半径<br />
+<span
+class="math inline">\(r=\sqrt{\frac{2k-1}{2}R\lambda}(k=1,2,3,\dots)\)</span><br />
+暗环半径<br />
+<span
+class="math inline">\(r=\sqrt{kR\lambda}(k=0,1,2,\dots)\)</span></p>
+<p>单缝夫琅禾费衍射</p>
+<p>明，暗条纹中心位置</p>
+<p>暗纹<br />
+<span class="math inline">\(a\sin{\theta}=\pm
+k\lambda(k=1,2,3,\dots)\)</span><br />
+明纹<br />
+<span class="math inline">\(a\sin{\theta}=\pm
+(2k+1)\frac{\lambda}{2}(k=1,2,3,\dots)\)</span></p>
+<p>光栅方程</p>
+<p><span class="math inline">\(\theta\)</span>为入射角（均取正）；<span
+class="math inline">\(\varphi\)</span>为入射角<br />
+平行光垂直入射到光栅时，屏幕上主极大条纹的位置为<br />
+<span class="math inline">\((a+b)\sin{\theta}=\pm k\lambda,\quad
+k=0,1,2,3,\dots\)</span><br />
+平行光斜入射时，屏幕上主极大条纹的位置为<br />
+<span class="math inline">\((a+b)(\sin{\theta}+\sin{\varphi})=\pm
+k\lambda,\quad k=0,1,2,3,\dots\)</span></p>
+<p>缺级条件：在多光束干涉极大的方向上同时满足单缝衍射极小的话，则该方向的主极大就会缺级<br />
+<span class="math inline">\(k=\frac{d}{a}k&#39;,\quad
+k&#39;=\pm1,\pm2,\pm3,\dots\)</span></p>
+<p>光学仪器的分辨率</p>
+<p>圆孔夫琅禾费衍射爱里斑的半径<br />
+<span class="math inline">\(r=\frac{d}{2}=f\tan{\theta}\approx
+f\sin{\theta}=1.22\frac{f\lambda}{D}\)</span></p>
+<p>瑞利判据<br />
+<span class="math inline">\(\theta_0=1.22\frac{\lambda}{D}\)</span></p>
+<p>光学仪器的分辨率<br />
+<span
+class="math inline">\(R=\frac{1}{\theta_{min}}=\frac{0.82D}{\lambda}\)</span></p>
+<p>光的偏振</p>
+<p>五种偏振状态：<br />
+自然光、线偏振光、部分偏振光、椭圆偏振光、圆偏振光</p>
+<p>自然光通过偏振片时，投射光强为原来的二分之一</p>
+<p>马吕斯定律</p>
+<p>入射光光强为<span
+class="math inline">\(I_0\)</span>，透射光光强为<span
+class="math inline">\(I\)</span>，线偏振光的振动方向和检偏器的偏振光夹角为<span
+class="math inline">\(\alpha\)</span><br />
+<span class="math inline">\(I=I_0 \cos^2{\alpha}\)</span></p>
+<p>布鲁斯特定律</p>
+<p><span
+class="math inline">\(n_{21}=n_2/n_1\)</span>为介质2对介质1的相对折射率<br />
+<span class="math inline">\(i_0\)</span>为起偏振角或布鲁斯特角<br />
+<span class="math inline">\(\tan{i_0}=n_{21}\)</span></p>
+<h1 id="狭义相对论">狭义相对论</h1>
+<p>洛伦兹变换</p>
+<p><span class="math inline">\(k=\sqrt{1-\frac{u^2}{c^2}}\)</span></p>
+<p>洛伦兹坐标变换<br />
+<span class="math inline">\(x&#39;=\frac{x-ut}{k}\)</span><br />
+<span class="math inline">\(y&#39;=y\)</span><br />
+<span class="math inline">\(z&#39;=z\)</span><br />
+<span class="math inline">\(t=\frac{t-\frac{u}{c^2}x}{k}\)</span></p>
+<p>洛伦兹速度变换<br />
+<span
+class="math inline">\(v&#39;_x=\frac{v_x-u}{1-\frac{uv_x}{c^2}}\)</span><br />
+<span class="math inline">\(v&#39;_y=\frac{v_y
+k}{1-\frac{uv_x}{c^2}}\)</span><br />
+<span class="math inline">\(v&#39;_z=\frac{v_z
+k}{1-\frac{uv_x}{c^2}}\)</span></p>
+<p>相对论时空观</p>
+<p>时间延缓<br />
+<span class="math inline">\(\tau=\frac{\tau_0}{k}\)</span></p>
+<p>长度收缩<br />
+<span class="math inline">\(l=l_0k\)</span></p>
+<p>狭义相对论动力学</p>
+<p>质速关系<br />
+<span class="math inline">\(m=\frac{m_0}{k}\)</span></p>
+<p>动量<br />
+<span
+class="math inline">\(\vec{p}=m\vec{v}=\frac{m_0\vec{v}}{k}\)</span></p>
+<p>相对论质量与能量</p>
+<p>质能关系<br />
+<span class="math inline">\(E=mc^2\)</span><br />
+静止能量<br />
+<span class="math inline">\(E_0=m_0c^2\)</span><br />
+动能<br />
+<span class="math inline">\(E_k=E-E_0\)</span><br />
+静能释放<br />
+<span class="math inline">\(\Delta E_k=\Delta m_0c^2\)</span><br />
+动量与能量关系<br />
+<span class="math inline">\(E^2=(pc)^2+E_0^2\)</span></p>
+<p>量子物理基础</p>
+<p>单色辐出度<span
+class="math inline">\(M_\lambda(T)\)</span>和辐出度<span
+class="math inline">\(M(T)\)</span>的关系<br />
+<span class="math inline">\(M(T)=\int_0^\infty
+M_\lambda(T)d\lambda\)</span></p>
+<p>斯特潘-玻尔兹曼定律<br />
+<span class="math inline">\(\sigma\)</span>为斯特潘-玻尔兹曼常量<br />
+<span class="math inline">\(M(T)=\sigma T^4\)</span></p>
+<p>维恩位移定律<br />
+<span class="math inline">\(b\)</span>为维恩常数<br />
+黑体辐射能谱峰值对应的波长<span
+class="math inline">\(\lambda_m\)</span>与黑体温度<span
+class="math inline">\(T\)</span>的关系为<br />
+<span class="math inline">\(\lambda_m T=b\)</span></p>
+<p>康普顿效应</p>
+<p>在散射X射线中出了有与入射波长相同的射线外，还有波长比入射波波长更长的射线</p>
+<p>在同一散射角下，对于所有的散射物质，波长的该变量都相同</p>
+<p>康普顿散射的强度与原子序数成负相关</p>
+<p>散射角为<span class="math inline">\(\varphi\)</span><br />
+<span
+class="math inline">\(\lambda-\lambda_0=\frac{2h}{m_0c}\sin^2{\frac{\varphi}{2}}\)</span></p>
+<p>光的波粒二象性</p>
+<p>能量<br />
+<span class="math inline">\(E=h\nu\)</span><br />
+动量<br />
+<span class="math inline">\(p=\frac{h}{\lambda}\)</span><br />
+质量<br />
+<span
+class="math inline">\(m=\frac{E}{c^2}=\frac{h\nu}{c^2}\)</span><br />
+光子的静止质量为0</p>
+<p>玻尔的氢原子理论</p>
+<p><span class="math inline">\(R\)</span>为氢原子的里德伯常数</p>
+<p>氢原子光谱系的波数可以用统一的公式表示<br />
+<span
+class="math inline">\(\widetilde{\nu}=\frac{1}{\lambda}=R(\frac{1}{k^2}-\frac{1}{n^2})\)</span><br />
+<span class="math inline">\(k=1,2,3,\dots\)</span><br />
+<span class="math inline">\(n=k+1,k+2,k+3,\dots\)</span></p>
+<table>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(k\)</span></th>
+<th><span class="math inline">\(n\)</span></th>
+<th>线系</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2,3,4,...</td>
+<td>赖曼系</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3,4,5,...</td>
+<td>巴尔末系</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>4,5,6,...</td>
+<td>帕邢系</td>
+</tr>
+</tbody>
+</table>
+<p>氢原子的轨道半径和能级</p>
+<p><span class="math inline">\(r_n=(\frac{\varepsilon_0 h^2}{\pi m
+e^2}n^2)\)</span><br />
+<span
+class="math inline">\(E_n=-(\frac{me^4}{8\varepsilon_0^2h^2})\frac{1}{n^2}=-\frac{13.6}{n^2}eV\)</span></p>
+<p>约化普朗克常数<br />
+<span class="math inline">\(\hbar=\frac{h}{2\pi}\)</span></p>
+<p>电子在鼎泰轨道上绕核做圆周运动时，其角动量只能取<span
+class="math inline">\(\hbar\)</span>的整数倍，即<span
+class="math inline">\(L=n\hbar(n=1,2,3,\dots)\)</span></p>
+<p>德布罗意假设</p>
+<p>实物粒子也具有波动性</p>
+<p>对于静质量为<span class="math inline">\(m_0\)</span>,速度为<span
+class="math inline">\(v\)</span>的实物粒子，其德布罗意波或物质波的波长为<br />
+<span
+class="math inline">\(\lambda=\frac{h}{p}=\frac{h}{mv}=\frac{h}{m_0v}\sqrt{1-\frac{v^2}{c^2}}\)</span></p>
+<p>不确定关系</p>
+<p>微观粒子的坐标和动量不能同时被准确地测量<br />
+$xp_x h $</p>
+<p>对能量和时间的测量也存在类似的关系<br />
+$E t h $</p>
+<p>波函数</p>
+<p>波函数是用来描述微观粒子的运动状态的函数，一般用<span
+class="math inline">\(\Psi(\vec{r},t)\)</span>表示</p>
+<p>波函数的平方<span class="math inline">\(|\Psi|^2=\Psi
+\Psi^*\)</span>表示粒子出现在空间某点附近单位体积元中的概率</p>
+<p>波函数必须满足单值、有限和连续三个条件以及归一化条件，即<br />
+<span class="math inline">\(\int|\Psi|^2dV=1\)</span></p>
+<p>一维无限深方势阱</p>
+<p>势能函数 <span class="math display">\[
+U(x)=
+\begin{cases}
+0,0&lt;x&lt;a \\
+\infty,x\le0 或x\ge a
+\end{cases}
+\]</span></p>
+<p>势阱中粒子的能量<br />
+<span
+class="math inline">\(E_n=n^2(\frac{\pi^2\hbar^2}{2ma^2})(n=1,2,3,\dots)\)</span></p>
+<p>一维无限深方势阱中粒子的波函数为<br />
+<span
+class="math inline">\(\psi_n(x)=\sqrt{\frac{2}{a}}\sin{\frac{n\pi}{a}x}(0\le
+x\le a)\)</span></p>
 
     </div>
 
@@ -549,7 +879,7 @@ L}{\ln{\frac{R_B}{R_A}}}\)</span></td>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6"><span class="nav-number">1.</span> <span class="nav-text">质点运动学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%A8%E7%82%B9%E5%8A%A8%E5%8A%9B%E5%AD%A6"><span class="nav-number">2.</span> <span class="nav-text">质点动力学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9A%E4%BD%93%E5%AE%9A%E8%BD%B4%E8%BD%AC%E5%8A%A8"><span class="nav-number">3.</span> <span class="nav-text">刚体定轴转动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B0%94%E4%BD%93%E5%8A%A8%E7%90%86%E8%AE%BA"><span class="nav-number">4.</span> <span class="nav-text">气体动理论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%B5%E7%A3%81%E5%AD%A6"><span class="nav-number">5.</span> <span class="nav-text">电磁学</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6"><span class="nav-number">1.</span> <span class="nav-text">质点运动学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%A8%E7%82%B9%E5%8A%A8%E5%8A%9B%E5%AD%A6"><span class="nav-number">2.</span> <span class="nav-text">质点动力学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9A%E4%BD%93%E5%AE%9A%E8%BD%B4%E8%BD%AC%E5%8A%A8"><span class="nav-number">3.</span> <span class="nav-text">刚体定轴转动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B0%94%E4%BD%93%E5%8A%A8%E7%90%86%E8%AE%BA"><span class="nav-number">4.</span> <span class="nav-text">气体动理论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%B5%E7%A3%81%E5%AD%A6"><span class="nav-number">5.</span> <span class="nav-text">电磁学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E8%B0%90%E8%BF%90%E5%8A%A8"><span class="nav-number">6.</span> <span class="nav-text">简谐运动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%BA%E6%A2%B0%E6%B3%A2"><span class="nav-number">7.</span> <span class="nav-text">机械波</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6"><span class="nav-number">8.</span> <span class="nav-text">波动光学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8B%AD%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA"><span class="nav-number">9.</span> <span class="nav-text">狭义相对论</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
