@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 6.1.0">
+<meta name="generator" content="Hexo 6.3.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -154,6 +154,80 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/01/22/%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AAosu-%E8%A7%A6%E7%9B%98-Part-1-%E5%88%9D%E6%AD%A5%E6%9E%84%E6%83%B3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zhangqi Li">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhangqi Li's 博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/01/22/%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AAosu-%E8%A7%A6%E7%9B%98-Part-1-%E5%88%9D%E6%AD%A5%E6%9E%84%E6%83%B3/" class="post-title-link" itemprop="url">制作一个osu!触盘 Part 1 初步构想</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-01-22 14:21:03 / 修改时间：15:35:54" itemprop="dateCreated datePublished" datetime="2023-01-22T14:21:03+08:00">2023-01-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="前言">前言</h1>
+<p>作为一个入坑超过一年的osu玩家，一直以来我的游玩设备都非常简陋。在2kpp时我才把我的百元鼠标换成了数位板，键盘更是一直用着笔记本自带的薄膜键盘。因为资金问题，选择困难症再加上“能用就用”的想法，我没有更换键盘或者买个触盘的欲望。在大二上学期的某一天，我对鼠标和键盘的通信协议产生了好奇，在查阅资料后发现它们几乎都在使用HID(Human
+Interface
+Device)与PC通信，后来我在翻看STM32CubeMX时发现STM32芯片能够实现该协议。也差不多在这段时间，稚晖君发布了一个完全由自己设计的键盘，他的键盘主控也是STM32。到了学期末，aetrna刷新osu!pp记录的成绩震惊了整个osu圈，我在这时也初次了解到Wooting
+60
+HE这款键盘。这款键盘不同于传统机械键盘，它的轴体是磁力轴，键盘本体通过霍尔传感器感应按键按下的距离，正因为这样该键盘可以调节触发距离，并且可以实现快速触发这一逆天功能。市面上这种键盘屈指可数且价格昂贵，再结合稚晖君的伟大创举，我萌生了自己设计并制作一款触盘的想法。</p>
+<h1 id="初步探索">初步探索</h1>
+<p>我的初步设想是，制作一个2+3键的osu触盘，2个主键可以实现热拔插，同时也兼容Wooting磁轴，可以感应磁轴下落的距离。要实现这些，需要合适的PCB，磁轴和霍尔感应器。</p>
+<h2 id="pcb">PCB</h2>
+<p>我翻看立创开源平台的一些键盘工程后发现，轴座一般都是五孔式的热拔插轴座，键轴正中下方是固定孔，无法安放传感器，于是我设想可以在安放键轴的PCB下方加装一块装有感应器的PCB，使用FPC将两块板子相连接。</p>
+<h2 id="磁轴">磁轴</h2>
+<p>在淘宝上搜索后发现，并没有磁轴公开售卖，我想着可以魔改一个键轴，往里面塞个磁铁。于是我买回来试轴器和几款环形磁铁，虽然磁铁能够装进去，但由于内部结构的阻挡，按键无法按下。由于手头没有跟多的工具，无法对键轴进行进一步的魔改。</p>
+<h2 id="霍尔感应器">霍尔感应器</h2>
+<p>目前淘宝上搜索排名靠前的大部分都是开关霍尔感应器，无法检测磁场强度的大小，于是我把目光投向了德州仪器，我在此强推德州仪器，他们厂家的文档非常详细，并且一般也配套了仿真计算文件。在经过仿真和选型后，最终我选择了DRV5056A1。这款传感器是该系列中最灵敏的一款。可以有效感应磁轴磁铁产生的微小磁场。在购买了几块回来测试后确实符合要求。</p>
+<h1 id="小结">小结</h1>
+<p>在初步探索后我认识到，目前短期内磁力感应功能是实现不了的，但是可以先制作一款普通的触盘，同时预留连接器方便以后磁轴功能的扩充。而下一步就是触盘的设计。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/19/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -185,7 +259,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-12-02 10:50:32" itemprop="dateModified" datetime="2022-12-02T10:50:32+08:00">2022-12-02</time>
+                <time title="修改时间：2023-02-10 19:56:55" itemprop="dateModified" datetime="2023-02-10T19:56:55+08:00">2023-02-10</time>
               </span>
 
           
@@ -453,7 +527,7 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -501,7 +575,7 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment
 <div class="copyright">
   
   &copy; 2020 – 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 6.1.0">
+<meta name="generator" content="Hexo 6.3.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -28,7 +28,7 @@
 <meta property="og:description" content="质点运动学 位矢 \(\vec{r}&#x3D;x\vec{i}+y\vec{j}+z\vec{k}\) 位移 \(\Delta\vec{r}&#x3D;\Delta x\vec{i}+\Delta y\vec{j}+\Delta z\vec{k}\) 速度 \(\vec{v}&#x3D;\frac{d\vec{r}}{dt}\) 速率 \(v&#x3D;|\vec{v}|&#x3D;|\frac{d\vec{r}}{dt}|\">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-06-18T17:07:10.000Z">
-<meta property="article:modified_time" content="2022-12-02T02:50:32.282Z">
+<meta property="article:modified_time" content="2023-02-10T11:56:55.097Z">
 <meta property="article:author" content="Zhangqi Li">
 <meta name="twitter:card" content="summary">
 
@@ -189,7 +189,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-12-02 10:50:32" itemprop="dateModified" datetime="2022-12-02T10:50:32+08:00">2022-12-02</time>
+                <time title="修改时间：2023-02-10 19:56:55" itemprop="dateModified" datetime="2023-02-10T19:56:55+08:00">2023-02-10</time>
               </span>
 
           
@@ -544,13 +544,30 @@ class="math inline">\(E_p\)</span>和总机械能<span
 class="math inline">\(E\)</span>同相位变化<br />
 <span class="math inline">\(dE=2dE_k=2dE_p=\rho v^2dV=\rho
 dVA^2\omega^2\sin^2[\omega(t\mp\frac{x}{u})+\varphi]\)</span></p>
-<p>能量密度 <span class="math inline">\(w=\frac{dE}{dV}=\rho
+<p>能量密度<br />
+<span class="math inline">\(w=\frac{dE}{dV}=\rho
 A^2\omega^2\sin^2[\omega(t\mp\frac{x}{u})+\varphi]\)</span></p>
 <p>平均能量密度：能量密度在一个周期内的平均值<br />
 <span class="math inline">\(\bar w = \frac{1}{T}\int_{t}^{t+T}\omega
 dt=\frac{1}{2}\rho A^2 \omega^2\)</span></p>
+<p>平均能流：单位时间内垂直通过某一面积的平均能量<br />
+<span class="math inline">\(\bar P=\bar w u \Delta S\)</span></p>
+<p>能流密度：垂直通过单位面积的平均能流<br />
+<span class="math inline">\(I=\frac{\bar P}{\Delta S}=\bar w u\)</span>
+能流密度也被称为波的强度</p>
+<p>波的干涉</p>
+<p>相干条件：频率相同，振动方向平行，相位差恒定</p>
+<p>合振动的振幅参见简谐振动的合成</p>
+<p>波程差<br />
+<span class="math inline">\(\delta=r_2-r_1\)</span></p>
+<p>相位差<br />
+<span
+class="math inline">\(\varphi=\varphi_2-\varphi_1-2\pi\frac{r_2-r_1}{\lambda}\)</span></p>
+<p>波从波疏介质垂直入射到波密介质，反射波会产生半波损失，即产生了<span
+class="math inline">\(\pi\)</span>的相位突变</p>
 <p>驻波由两列频率、振动方向和振幅都相同而传播方向相反的简谐波叠加形成<br />
-<span class="math inline">\(y=2A\cos (2\pi\frac{x}{\lambda})\cos(2\pi
+<span class="math inline">\(y=A\cos 2\pi(\nu t-\frac{x}{\lambda})+A\cos
+2\pi(\nu t +\frac{x}{\lambda})=2A\cos (2\pi\frac{x}{\lambda})\cos(2\pi
 \nu t)\)</span></p>
 <p>波腹位置（振幅最大）<br />
 <span class="math inline">\(x=\pm k\frac{\lambda}{2}(k\in
@@ -565,7 +582,7 @@ dt=\frac{1}{2}\rho A^2 \omega^2\)</span></p>
 <p>光程差与相位差的关系<br />
 <span
 class="math inline">\(\Delta\varphi=\frac{2\pi}{\lambda}\delta\)</span></p>
-<p>光从光疏媒质向光密媒质入射时，会产生半波损失，即产生了<span
+<p>光从光疏媒质向光密媒质入射时，反射光会产生半波损失，即产生了<span
 class="math inline">\(\pi\)</span>的相位突变</p>
 <p>明纹相位差<br />
 <span class="math inline">\(\Delta\varphi=\pm2k\pi\)</span><br />
@@ -577,6 +594,8 @@ class="math inline">\(\pi\)</span>的相位突变</p>
 <span class="math inline">\(\delta=\pm
 (2k+1)\frac{\lambda}{2}\)</span></p>
 <p>杨氏双缝干涉</p>
+<p><span class="math inline">\(d\)</span>为双缝间距，<span
+class="math inline">\(D\)</span>为双缝到接收屏的距离</p>
 <p>光程差<br />
 <span class="math inline">\(\delta=nxd/D\)</span><br />
 明纹中心坐标<br />
@@ -587,16 +606,38 @@ class="math inline">\(\pi\)</span>的相位突变</p>
 <span class="math inline">\(\Delta x=D\lambda/(nd)\)</span></p>
 <p>薄膜干涉</p>
 <p>光程差</p>
-<p>反射光<br />
-<span
-class="math inline">\(\delta_r=2e\sqrt{n_2^2-n_1^2\sin^2{i}}(n_1&lt;n_2&lt;n_3或n_1&gt;n_2&gt;n_3)\)</span><br />
-<span
-class="math inline">\(\delta_r=2e\sqrt{n_2^2-n_1^2\sin^2{i}}+\frac{\lambda}{2}(n_1&lt;n_2&gt;n_3或n_1&gt;n_2&lt;n_3)\)</span></p>
-<p>透射光<br />
-<span
-class="math inline">\(\delta_r=2e\sqrt{n_2^2-n_1^2\sin^2{i}}+\frac{\lambda}{2}(n_1&lt;n_2&lt;n_3或n_1&gt;n_2&gt;n_3)\)</span><br />
-<span
-class="math inline">\(\delta_r=2e\sqrt{n_2^2-n_1^2\sin^2{i}}(n_1&lt;n_2&gt;n_3或n_1&gt;n_2&lt;n_3)\)</span></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><span
+class="math inline">\(n_1&lt;n_2&lt;n_3或n_1&gt;n_2&gt;n_3\)</span></th>
+<th><span
+class="math inline">\(n_1&lt;n_2&gt;n_3或n_1&gt;n_2&lt;n_3\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>反射光</td>
+<td><span
+class="math inline">\(\delta_r=2e\sqrt{n_2^2-n_1^2\sin^2{i}}\)</span></td>
+<td><span
+class="math inline">\(\delta_r=2e\sqrt{n_2^2-n_1^2\sin^2{i}}+\frac{\lambda}{2}\)</span></td>
+</tr>
+<tr class="even">
+<td>透射光</td>
+<td><span
+class="math inline">\(\delta_r=2e\sqrt{n_2^2-n_1^2\sin^2{i}}+\frac{\lambda}{2}\)</span></td>
+<td><span
+class="math inline">\(\delta_r=2e\sqrt{n_2^2-n_1^2\sin^2{i}}\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>劈尖干涉</p>
 <p>光垂直照射在劈尖上时，反射光的光程差为<br />
 <span
@@ -610,20 +651,28 @@ class="math inline">\(\delta_r=2n_2e+\frac{\lambda}{2}(n_1&lt;n_2&gt;n_3或n_1&g
 <p>牛顿环</p>
 <p>明环半径<br />
 <span
-class="math inline">\(r=\sqrt{\frac{2k-1}{2}R\lambda}(k=1,2,3,\dots)\)</span><br />
+class="math inline">\(r=\sqrt{\frac{(2k-1)R\lambda}{2n}}(k=1,2,3,\dots)\)</span><br />
 暗环半径<br />
 <span
-class="math inline">\(r=\sqrt{kR\lambda}(k=0,1,2,\dots)\)</span></p>
+class="math inline">\(r=\sqrt{\frac{kR\lambda}{n}}(k=0,1,2,\dots)\)</span></p>
 <p>单缝夫琅禾费衍射</p>
 <p>明，暗条纹中心位置</p>
+<p><span class="math inline">\(a\)</span>为单缝的宽度</p>
 <p>暗纹<br />
 <span class="math inline">\(a\sin{\theta}=\pm
 k\lambda(k=1,2,3,\dots)\)</span><br />
 明纹<br />
 <span class="math inline">\(a\sin{\theta}=\pm
 (2k+1)\frac{\lambda}{2}(k=1,2,3,\dots)\)</span></p>
+<p>或<span class="math inline">\(\delta=a\sin \theta =
+m\frac{\lambda}{2}(m\ge2)\)</span>，m为偶数得暗纹，m为奇数得明纹</p>
+<p>中央条纹宽度<br />
+<span class="math inline">\(\Delta x=2f\frac{\lambda}{a}\)</span></p>
+<p>其他明纹线宽度为两相邻暗纹间距<br />
+<span
+class="math inline">\(x_{k+1}-x_{k}=\frac{\lambda}{a}f\)</span></p>
 <p>光栅方程</p>
-<p><span class="math inline">\(\theta\)</span>为入射角（均取正）；<span
+<p><span class="math inline">\(\theta\)</span>为衍射角（均取正）；<span
 class="math inline">\(\varphi\)</span>为入射角<br />
 平行光垂直入射到光栅时，屏幕上主极大条纹的位置为<br />
 <span class="math inline">\((a+b)\sin{\theta}=\pm k\lambda,\quad
@@ -639,7 +688,8 @@ k&#39;=\pm1,\pm2,\pm3,\dots\)</span></p>
 <span class="math inline">\(r=\frac{d}{2}=f\tan{\theta}\approx
 f\sin{\theta}=1.22\frac{f\lambda}{D}\)</span></p>
 <p>瑞利判据<br />
-<span class="math inline">\(\theta_0=1.22\frac{\lambda}{D}\)</span></p>
+<span class="math inline">\(D\)</span>为仪器进光控直径 <span
+class="math inline">\(\theta_0=1.22\frac{\lambda}{D}\)</span></p>
 <p>光学仪器的分辨率<br />
 <span
 class="math inline">\(R=\frac{1}{\theta_{min}}=\frac{0.82D}{\lambda}\)</span></p>
@@ -660,6 +710,7 @@ class="math inline">\(n_{21}=n_2/n_1\)</span>为介质2对介质1的相对折射
 <span class="math inline">\(\tan{i_0}=n_{21}\)</span></p>
 <h1 id="狭义相对论">狭义相对论</h1>
 <p>洛伦兹变换</p>
+<p><span class="math inline">\(u\)</span>为S与S'系的相对速度</p>
 <p><span class="math inline">\(k=\sqrt{1-\frac{u^2}{c^2}}\)</span></p>
 <p>洛伦兹坐标变换<br />
 <span class="math inline">\(x&#39;=\frac{x-ut}{k}\)</span><br />
@@ -820,7 +871,10 @@ x\le a)\)</span></p>
     <a href="/2021/12/05/%E5%A4%9C%E7%A9%BA%E4%B8%AD%E7%9A%84%E7%B2%BE%E7%81%B5%E2%80%94%E2%80%94%E5%BD%97%E6%98%9F/" rel="prev" title="夜空中的精灵——彗星☄">
       <i class="fa fa-chevron-left"></i> 夜空中的精灵——彗星☄
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2023/01/22/%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AAosu-%E8%A7%A6%E7%9B%98-Part-1-%E5%88%9D%E6%AD%A5%E6%9E%84%E6%83%B3/" rel="next" title="制作一个osu!触盘 Part 1 初步构想">
+      制作一个osu!触盘 Part 1 初步构想 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -893,7 +947,7 @@ x\le a)\)</span></p>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -941,7 +995,7 @@ x\le a)\)</span></p>
 <div class="copyright">
   
   &copy; 2020 – 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
