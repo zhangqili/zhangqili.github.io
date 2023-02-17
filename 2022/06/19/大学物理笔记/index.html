@@ -28,7 +28,7 @@
 <meta property="og:description" content="质点运动学 位矢 \(\vec{r}&#x3D;x\vec{i}+y\vec{j}+z\vec{k}\) 位移 \(\Delta\vec{r}&#x3D;\Delta x\vec{i}+\Delta y\vec{j}+\Delta z\vec{k}\) 速度 \(\vec{v}&#x3D;\frac{d\vec{r}}{dt}\) 速率 \(v&#x3D;|\vec{v}|&#x3D;|\frac{d\vec{r}}{dt}|\">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-06-18T17:07:10.000Z">
-<meta property="article:modified_time" content="2023-02-10T11:56:55.097Z">
+<meta property="article:modified_time" content="2023-02-17T18:38:29.178Z">
 <meta property="article:author" content="Zhangqi Li">
 <meta name="twitter:card" content="summary">
 
@@ -189,7 +189,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-02-10 19:56:55" itemprop="dateModified" datetime="2023-02-10T19:56:55+08:00">2023-02-10</time>
+                <time title="修改时间：2023-02-18 02:38:29" itemprop="dateModified" datetime="2023-02-18T02:38:29+08:00">2023-02-18</time>
               </span>
 
           
@@ -522,7 +522,9 @@ class="math inline">\(\omega=\sqrt{\frac{k}{m}}\)</span></p>
 计算方式参见质点动力学</p>
 <p>振动合成<br />
 <span
-class="math inline">\(A=\sqrt{A_1^2+A_2^2+2A_1A_2\cos{(\varphi_2-\varphi_1)}}\)</span></p>
+class="math inline">\(A=\sqrt{A_1^2+A_2^2+2A_1A_2\cos{(\varphi_2-\varphi_1)}}\)</span><br />
+<span class="math inline">\(\tan{\varphi}=\frac{A_1 \sin{\varphi_1}+A_2
+\sin{\varphi_2}}{A_1 \cos{\varphi_1} + A_2 \cos{\varphi_2}}\)</span></p>
 <h1 id="机械波">机械波</h1>
 <p>波速，又称相速，用<span class="math inline">\(u\)</span>表示<br />
 <span class="math inline">\(u=\frac{\lambda}{T}=\lambda\nu\)</span></p>
@@ -703,7 +705,8 @@ class="math inline">\(I_0\)</span>，透射光光强为<span
 class="math inline">\(I\)</span>，线偏振光的振动方向和检偏器的偏振光夹角为<span
 class="math inline">\(\alpha\)</span><br />
 <span class="math inline">\(I=I_0 \cos^2{\alpha}\)</span></p>
-<p>布鲁斯特定律</p>
+<p>布鲁斯特定律<br />
+通常情况下，反射光和折射光不再是自然光，而是部分偏振光，而且在反射光中垂直于入射面的光振动要多于平行振动，而折射光则相反。反射光的偏振化程度与入射角有关，当入射角度等于布儒斯特角时，反射光就成为只有垂直于入射面的线偏振光，且反射光与折射光垂直</p>
 <p><span
 class="math inline">\(n_{21}=n_2/n_1\)</span>为介质2对介质1的相对折射率<br />
 <span class="math inline">\(i_0\)</span>为起偏振角或布鲁斯特角<br />
@@ -716,7 +719,14 @@ class="math inline">\(n_{21}=n_2/n_1\)</span>为介质2对介质1的相对折射
 <span class="math inline">\(x&#39;=\frac{x-ut}{k}\)</span><br />
 <span class="math inline">\(y&#39;=y\)</span><br />
 <span class="math inline">\(z&#39;=z\)</span><br />
-<span class="math inline">\(t=\frac{t-\frac{u}{c^2}x}{k}\)</span></p>
+<span
+class="math inline">\(t&#39;=\frac{t-\frac{u}{c^2}x}{k}\)</span></p>
+<p>洛伦兹坐标逆变换<br />
+<span class="math inline">\(x=\frac{x&#39;+ut&#39;}{k}\)</span><br />
+<span class="math inline">\(y=y&#39;\)</span><br />
+<span class="math inline">\(z=z&#39;\)</span><br />
+<span
+class="math inline">\(t=\frac{t&#39;+\frac{u}{c^2}x&#39;}{k}\)</span></p>
 <p>洛伦兹速度变换<br />
 <span
 class="math inline">\(v&#39;_x=\frac{v_x-u}{1-\frac{uv_x}{c^2}}\)</span><br />
@@ -746,7 +756,7 @@ class="math inline">\(\vec{p}=m\vec{v}=\frac{m_0\vec{v}}{k}\)</span></p>
 <span class="math inline">\(\Delta E_k=\Delta m_0c^2\)</span><br />
 动量与能量关系<br />
 <span class="math inline">\(E^2=(pc)^2+E_0^2\)</span></p>
-<p>量子物理基础</p>
+<h1 id="量子物理基础">量子物理基础</h1>
 <p>单色辐出度<span
 class="math inline">\(M_\lambda(T)\)</span>和辐出度<span
 class="math inline">\(M(T)\)</span>的关系<br />
@@ -767,7 +777,7 @@ class="math inline">\(T\)</span>的关系为<br />
 <p>康普顿散射的强度与原子序数成负相关</p>
 <p>散射角为<span class="math inline">\(\varphi\)</span><br />
 <span
-class="math inline">\(\lambda-\lambda_0=\frac{2h}{m_0c}\sin^2{\frac{\varphi}{2}}\)</span></p>
+class="math inline">\(\lambda-\lambda_0=\frac{2h}{m_0c}\sin^2{\frac{\varphi}{2}}=\frac{h}{m_0c}(1-\cos{\theta})=\lambda_C(1-\cos\theta)\)</span></p>
 <p>光的波粒二象性</p>
 <p>能量<br />
 <span class="math inline">\(E=h\nu\)</span><br />
@@ -812,12 +822,12 @@ class="math inline">\(\widetilde{\nu}=\frac{1}{\lambda}=R(\frac{1}{k^2}-\frac{1}
 </table>
 <p>氢原子的轨道半径和能级</p>
 <p><span class="math inline">\(r_n=(\frac{\varepsilon_0 h^2}{\pi m
-e^2}n^2)\)</span><br />
+e^2}n^2)=n^2r_1\)</span><br />
 <span
 class="math inline">\(E_n=-(\frac{me^4}{8\varepsilon_0^2h^2})\frac{1}{n^2}=-\frac{13.6}{n^2}eV\)</span></p>
 <p>约化普朗克常数<br />
 <span class="math inline">\(\hbar=\frac{h}{2\pi}\)</span></p>
-<p>电子在鼎泰轨道上绕核做圆周运动时，其角动量只能取<span
+<p>电子在定态轨道上绕核做圆周运动时，其角动量只能取<span
 class="math inline">\(\hbar\)</span>的整数倍，即<span
 class="math inline">\(L=n\hbar(n=1,2,3,\dots)\)</span></p>
 <p>德布罗意假设</p>
@@ -828,7 +838,7 @@ class="math inline">\(v\)</span>的实物粒子，其德布罗意波或物质波
 class="math inline">\(\lambda=\frac{h}{p}=\frac{h}{mv}=\frac{h}{m_0v}\sqrt{1-\frac{v^2}{c^2}}\)</span></p>
 <p>不确定关系</p>
 <p>微观粒子的坐标和动量不能同时被准确地测量<br />
-$xp_x h $</p>
+$x p_x h $</p>
 <p>对能量和时间的测量也存在类似的关系<br />
 $E t h $</p>
 <p>波函数</p>
@@ -933,7 +943,7 @@ x\le a)\)</span></p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6"><span class="nav-number">1.</span> <span class="nav-text">质点运动学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%A8%E7%82%B9%E5%8A%A8%E5%8A%9B%E5%AD%A6"><span class="nav-number">2.</span> <span class="nav-text">质点动力学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9A%E4%BD%93%E5%AE%9A%E8%BD%B4%E8%BD%AC%E5%8A%A8"><span class="nav-number">3.</span> <span class="nav-text">刚体定轴转动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B0%94%E4%BD%93%E5%8A%A8%E7%90%86%E8%AE%BA"><span class="nav-number">4.</span> <span class="nav-text">气体动理论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%B5%E7%A3%81%E5%AD%A6"><span class="nav-number">5.</span> <span class="nav-text">电磁学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E8%B0%90%E8%BF%90%E5%8A%A8"><span class="nav-number">6.</span> <span class="nav-text">简谐运动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%BA%E6%A2%B0%E6%B3%A2"><span class="nav-number">7.</span> <span class="nav-text">机械波</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6"><span class="nav-number">8.</span> <span class="nav-text">波动光学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8B%AD%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA"><span class="nav-number">9.</span> <span class="nav-text">狭义相对论</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6"><span class="nav-number">1.</span> <span class="nav-text">质点运动学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%A8%E7%82%B9%E5%8A%A8%E5%8A%9B%E5%AD%A6"><span class="nav-number">2.</span> <span class="nav-text">质点动力学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9A%E4%BD%93%E5%AE%9A%E8%BD%B4%E8%BD%AC%E5%8A%A8"><span class="nav-number">3.</span> <span class="nav-text">刚体定轴转动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B0%94%E4%BD%93%E5%8A%A8%E7%90%86%E8%AE%BA"><span class="nav-number">4.</span> <span class="nav-text">气体动理论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%B5%E7%A3%81%E5%AD%A6"><span class="nav-number">5.</span> <span class="nav-text">电磁学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E8%B0%90%E8%BF%90%E5%8A%A8"><span class="nav-number">6.</span> <span class="nav-text">简谐运动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%BA%E6%A2%B0%E6%B3%A2"><span class="nav-number">7.</span> <span class="nav-text">机械波</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A2%E5%8A%A8%E5%85%89%E5%AD%A6"><span class="nav-number">8.</span> <span class="nav-text">波动光学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8B%AD%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA"><span class="nav-number">9.</span> <span class="nav-text">狭义相对论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%87%8F%E5%AD%90%E7%89%A9%E7%90%86%E5%9F%BA%E7%A1%80"><span class="nav-number">10.</span> <span class="nav-text">量子物理基础</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
